@@ -71,12 +71,6 @@ function updateTime() {
         document.getElementById("changeColor").classList.remove("blue");
         document.getElementById("changeColor").classList.add("red");
     }
-    else if (red == true) {
-
-        document.getElementById("clock").className = "red";
-        document.getElementById("changeColor").classList.remove("blue");
-        document.getElementById("changeColor").classList.add("red");
-    }
     else if (Number.isNaN(limitmin) && seconds >= limitsec) {
 
         document.getElementById("mins").style.backgroundColor = "red";
