@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid_container {
+    width: 100vw;
+    height: 100vh;
+
+    border: 1px dotted black;
+    font-family: sans-serif;
+
+    font-weight: bold;
+    color: white;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.circle {
+    border-radius: 50%;
+
+    grid-column: 2;
+    grid-row: 2;
+
+    align-items: center;
+}
+
+.blue {
+    background-color: #0781d4;
+    border-radius: 50%;
+    
+}
+
+.red {
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* .circle:hover {
+    opacity: 0;
+} */
+
+#controls {
+    text-align: center;;
+}
+
+.clock {
+    text-align: center;
+    margin: auto;
+    height: 100px;
+    width: 200px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    margin-top: 10px;
+
+    border-radius: 50%;
+
+    font-size: xx-large;
+    
+    color: black;
+
+}
+
+.timer {
+    margin: auto;
+}
+
+#txtTempo {
+
+    width: 60px;
+    text-align: center;
+    padding: 3px;
+}
+
+#btnStart {
+
+    width: 50px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.hidden_input {
+
+    text-align: center;
+    background-color: #0781d4;
+    width: 50px;
+    padding: 3px;
+}
+
+
+.hide {
+    visibility: hidden;
+
+}
