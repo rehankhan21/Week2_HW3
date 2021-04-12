@@ -77,6 +77,14 @@ function updateTime() {
         document.getElementById("changeColor").classList.remove("blue");
         document.getElementById("changeColor").classList.add("red");
     }
+    else if (Number.isNaN(limitmin) && seconds >= limitsec) {
+
+        document.getElementById("mins").style.backgroundColor = "red";
+        document.getElementById("secs").style.backgroundColor = "red";
+        document.getElementById("clock").className = "red";
+        document.getElementById("changeColor").classList.remove("blue");
+        document.getElementById("changeColor").classList.add("red");
+    }
     else {
 
         document.getElementById("clock").className = "blue";
@@ -143,6 +151,7 @@ function clicked(evt) {
                 input[0].removeEventListener("keydown", keydown);
 
                 // Shifts the focus on enter click from the first input too the second
+                if(typeof(limitmin) == "number" )
                 input[1].focus();
             }
 
